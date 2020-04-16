@@ -1,67 +1,55 @@
 <!DOCTYPE html>
-<html lang="ru">
-
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./styles/index.css">
-	<title>Главная</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mobile navigation</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
-
 <body>
-	<div class="wrap">
-		<header class="header">
 
-			<div class="logo">
-				<a href="#">
-					<img src="./img/logo.svg" alt="logo">
-				</a>
-			</div>
+    <header class="header">
+        <div class="header-overlay">
+            <div class="nav-container">
 
-			<nav class="nav">
-				<ul class="nav__ul">
-					<li class="nav__item"><a href="#" class="nav__link">Live ставки</a></li>
-					<li class="nav__item"><a href="#" class="nav__link">Результаты</a></li>
-					<li class="nav__item"><a href="#" class="nav__link">Информация</a></li>
-				</ul>
-			</nav>
+                <div class="logo">СуперСайт</div>
+                
+                <!-- НАВИГАЦИЯ -->
+                <div class="nav-wrapper">
 
-			<div class="reg-auth">
-				<button class="reg-auth__btn">
-					<div>Вход</div>
-				</button>
-				<button class="reg-auth__btn">
-					<div>Регистрация</div>
-				</button>
-			</div>
+                    <!-- Навигация для десктопа -->
+                    <ul class="nav">
+                        <li class="nav__item"><a href="#" class="nav__link">О компании</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Услуги</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Работы</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+                    </ul>
 
-			<div id="menu-togle" class="menu-icon">
-				<div class="menu-icon-line"></div>
-			</div>
+                    <!-- Кнопка для мобильной навигации -->
+                    <div id="menu-togle" class="menu-icon">
+                        <div class="menu-icon-line"></div>
+                    </div>
 
-			<!-- МОБИЛЬНАЯ НАВИГАЦИЯ -->
-			<nav class="mobile-nav">
-				<ul class="nav__ul">
-					<li class="nav__item"><a href="#" class="nav__link">Live ставки</a></li>
-					<li class="nav__item"><a href="#" class="nav__link">Результаты</a></li>
-					<li class="nav__item"><a href="#" class="nav__link">Информация</a></li>
-				</ul>
+                    <!-- Мобильная навигация -->
+                    <div id="mobile-nav" class="mobile-nav">
+                        <div class="mobile-nav__title">Навигация</div>
+                        <ul class="mobile-nav__list">
+                            <li class="mobile-nav__item"><a href="#" class="mobile-nav__link">О компании</a></li>
+                            <li class="mobile-nav__item"><a href="#" class="mobile-nav__link">Услуги</a></li>
+                            <li class="mobile-nav__item"><a href="#" class="mobile-nav__link">Работы</a></li>
+                            <li class="mobile-nav__item"><a href="#" class="mobile-nav__link">Контакты</a></li>
+                        </ul>
+                    </div>
 
-				<button class="reg-auth__btn">
-					<div>Вход</div>
-				</button>
-				<button class="reg-auth__btn">
-					<div>Регистрация</div>
-				</button>
-			</nav>
 
-	</div>
+                </div>
+                <!-- // НАВИГАЦИЯ -->
 
-	</header>
-
-	</div>
-
-	<script src="./scripts/index.js"></script>
+            </div>
+        </div>
+    </header>
+    
+    <script src="js/main.js"></script>
 </body>
-
 </html>
