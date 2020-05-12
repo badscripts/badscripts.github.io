@@ -2,158 +2,232 @@
 <html lang="ru">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./styles/index.css">
-	<link rel="stylesheet" href="./styles/header.css">
-	<link rel="stylesheet" href="./styles/main.css">
-	<link rel="stylesheet" href="./styles/footer.css">
-	<title>Главная</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <title>Пукки Константин</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .bold {
+      font-weight: 500;
+    }
+
+    .wrap {
+      width: 1100px;
+      margin: 50px auto 50px auto;
+    }
+
+    .wrap__block {
+      padding: 30px;
+      margin-top: 50px;
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    }
+
+    .wrap__title {
+      margin-bottom: 20px;
+      font-size: 28px;
+      color: #33a0a3;
+    }
+
+    .header {
+      display: flex;
+      background-color: #2f2f31;
+      color: white;
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    }
+
+    .header__photo {
+      width: 32%;
+      line-height: 0px;
+    }
+
+    .header__photo>img {
+      width: 100%;
+    }
+
+    .header__info {
+      width: 68%;
+      margin-left: 35px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .header__title {
+      margin: 20px 60px 0px -35px;
+      padding: 20px 0px 25px 30px;
+      background-color: #33a0a3;
+    }
+
+    .my-name {
+      font-size: 30px;
+      font-weight: 500;
+    }
+
+    .my-special {
+      font-weight: 300;
+    }
+
+    .my-contacts {
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+
+    .my-contacts__item {
+      margin-top: 12px;
+      display: flex;
+      align-items: center;
+    }
+
+    .my-contacts__link {
+      margin-left: 10px;
+      color: white;
+      font-weight: 300;
+    }
+
+    .my-contacts__item>img {
+      width: 2em;
+    }
+
+    .education__item {
+      margin-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    .education__item:not(:last-child) {
+      border-bottom: 2px solid #d2d2d2;
+    }
+
+    .education__university {
+      font-size: 18px;
+    }
+
+    .education__description {
+      margin-top: 5px;
+      font-weight: 300;
+      line-height: 24px;
+    }
+
+    .skills__item {
+      margin-top: 10px;
+      margin-left: 1em;
+      list-style: circle;
+    }
+
+    .skills__other {
+      margin-top: 20px;
+    }
+
+    .skills__discription {
+      margin-top: 20px;
+      line-height: 2em;
+    }
+
+    .additional__discription {
+      line-height: 2em;
+    }
+  </style>
 </head>
 
 <body>
-	<div class="wrap">
-		<header class="header">
+  <div class="wrap">
 
-			<div class="logo">
-				<a href="#">
-					<img src="./img/logo.svg" alt="logo">
-				</a>
-			</div>
+    <header class="header">
+      <div class="header__photo">
+        <img
+          src="https://psv4.userapi.com/c856320/u48397402/docs/d7/ebc3d5f1b3a2/o-hFcVe3N8M_1.jpg?extra=sBcnDyKtYtVJ9q60NsG-cO9D4ybwDsoyTeXQxtzKKtm9p5K3MPZ5TKdjEfLfVdjBClRWkuqeizIeYlFdqt6ARt9hjFMkFxts_h0KBEgKnlSjIyWAenJz_D9fBCMoriu2QQPlqsrl6BNMn-kM7BWOxDQ"
+          alt="Фотография">
+      </div>
 
-			<nav class="nav">
-				<ul class="nav__ul">
-					<li class="nav__item"><a href="#" class="nav__link">Live ставки</a></li>
-					<li class="nav__item"><a href="#" class="nav__link">Результаты</a></li>
-					<li class="nav__item"><a href="#" class="nav__link">Информация</a></li>
-				</ul>
-			</nav>
+      <div class="header__info">
+        <div class="header__title">
+          <h2 class="my-name">Пукки Константин</h2>
+          <p class="my-special">Фронтенд разработчик</p>
+        </div>
 
-			<div class="reg-auth">
-				<button class="reg-auth__btn">
-					<div>Вход</div>
-				</button>
-				<button class="reg-auth__btn">
-					<div>Регистрация</div>
-				</button>
-			</div>
+        <div class="my-contacts">
+          <div class="my-contacts__item">
+            <img src="https://image.flaticon.com/icons/png/512/1034/1034231.png">
+            <a href="#" class="my-contacts__link">Россия, Санкт-Петербург</a>
+          </div>
+          <div class="my-contacts__item">
+            <img src="https://image.flaticon.com/icons/png/512/1034/1034233.png">
+            <a href="tel:+79533534465" class="my-contacts__link">+79533534465</a>
+          </div>
+          <div class="my-contacts__item">
+            <img src="https://image.flaticon.com/icons/png/512/1034/1034240.png">
+            <a href="mailto:pukkikonstantin@gmail.com" class="my-contacts__link">pukkikonstantin@gmail.com</a>
+          </div>
+          <div class="my-contacts__item">
+            <img src="https://image.flaticon.com/icons/png/512/1034/1034254.png">
+            <a href="https://github.com/NoBrouk" class="my-contacts__link">github.com/NoBrouk</a>
+          </div>
+        </div>
+      </div>
+    </header>
 
-			<div id="menu-togle" class="menu-icon"></div>
+    <div class="wrap__block education">
+      <h3 class="wrap__title">Образование</h3>
+      <div class="education__item">
+        <p class="education__university">
+          Санкт-Петербургский национальный исседовательский университет информационных
+          технологий, механики и оптики
+        </p>
+        <p class="education__description">
+          Факультет среднего профессионального образование 2017-2021 <br>
+          Специальность: "Информационные системы и программирование" <br>
+        </p>
+      </div>
+    </div>
 
-			<!-- МОБИЛЬНАЯ НАВИГАЦИЯ -->
-			<nav class="mobile-nav">
-				<ul class="nav__ul">
-					<li class="nav__item"><a href="#" class="nav__link">Live ставки</a></li>
-					<li class="nav__item"><a href="#" class="nav__link">Результаты</a></li>
-					<li class="nav__item"><a href="#" class="nav__link">Информация</a></li>
-				</ul>
+    <div class="wrap__block skills">
+      <h3 class="wrap__title">Профессиональные навыки</h3>
 
-				<button class="reg-auth__btn">
-					<div>Вход</div>
-				</button>
-				<button class="reg-auth__btn">
-					<div>Регистрация</div>
-				</button>
-			</nav>
+      <ul class="skills__ul">
+        <li class="skills__item">HTML 5</li>
+        <li class="skills__item">CSS 3</li>
+        <li class="skills__item">JavaScript es6+</li>
+        <li class="skills__item">React/Redux</li>
+        <li class="skills__item">Адаптивная верстка</li>
+        <li class="skills__item">Git</li>
+        <li class="skills__item">Есть небольшой опыт разработки с NodeJs, express, socket.io</li>
+      </ul>
 
-		</header>
+      <p class="skills__other"><span class="bold">Прочее:</span> Photoshop, Illustrator, Figma</p>
 
-		<!-- Баннер на главной странице -->
-		<section class="promotional">
-			<div class="promotional__content" style="background-image: url('./img/banner.png');"></div>
-		</section>
+      <div class="skills__discription">
+        + Опыт некоммерческой разработки 2 года;<br>
+        + Есть опыт разаботки singls page приложений (как с использованием react + redux, так и на нативном js);<br>
+        + Имеется опыт работы на фрилансе;<br>
+        + Опытный пользователь ПК;<br>
+        + Уровень английского: pre-intermediate;
+      </div>
+    </div>
 
-		<!-- Блок с подпиской -->
-		<section class="subscribe">
-			<a href="#" class="subscribe__link">
-				Подписывайся на нас Вконтакте
-				<img src="./img/vk.png" alt="icon vk">
-			</a>
-		</section>
+    <div class="wrap__block additional">
+      <h3 class="wrap__title">О себе</h3>
 
-		<main class="main">
+      <p class="additional__discription">
+        Возраст: 18 лет.<br>
+        Веду активный образ жизни. Стремлюсь быть успешным во всех начинаниях.<br>
+        В кроткие сроки обучаюсь новым знаниям<br>
+        При необходимости с легкостью пройду дополнительное обучение.<br>
+        Способен быстро и точно выполнять поручения.<br>
+        Люблю поряток и чистоту.<br>
+      </p>
+    </div>
 
-			<div class="events">
-
-				<div class="event-wrap">
-					<div class="event">
-
-						<div class="event__avatar">
-							<img src="./img/ava.jpg" alt="avatar">
-						</div>
-
-						<div class="event__title">
-							<h5 class="event__name">ПроСтример</h5>
-							<p class="event__description">
-								Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-								Rem exercitationem in, harum iusto sunt recusandae. Accusamus nemo voluptatum.
-							</p>
-						</div>
-
-						<div class="event__bet">
-							<div class="bet__win">
-								<p class="bet__title">Победа</p>
-								<button class="bet__btn">1.98</button>
-							</div>
-							<div class="bet__lose">
-								<p class="bet__title">Поражение</p>
-								<button class="bet__btn">2.88</button>
-							</div>
-						</div>
-
-						<div class="event__details">
-							Подробнее
-							<img src="./img/details.svg" alt="details">
-						</div>
-
-					</div>
-				</div>
-
-				<div class="event-wrap">
-					<div class="event">
-
-						<div class="event__avatar">
-							<img src="./img/ava.jpg" alt="avatar">
-						</div>
-
-						<div class="event__title">
-							<h5 class="event__name">ПроСтример</h5>
-							<p class="event__description">
-								Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-								Rem exercitationem in, harum iusto sunt recusandae. Accusamus nemo voluptatum.
-							</p>
-						</div>
-
-						<div class="event__bet">
-							<div class="bet__win">
-								<p class="bet__title">Победа</p>
-								<button class="bet__btn">1.98</button>
-							</div>
-							<div class="bet__lose">
-								<p class="bet__title">Поражение</p>
-								<button class="bet__btn">2.88</button>
-							</div>
-						</div>
-
-						<div class="event__details">
-							Подробнее
-							<img src="./img/details.svg" alt="details">
-						</div>
-
-					</div>
-				</div>
-
-			</div>
-
-		</main>
-
-		<footer class="footer">
-			<p class="footer__text">По вопросам stavkinastrimerov@gmail.com</p>
-		</footer>
-
-	</div>
-
-	<script src="./scripts/index.js"></script>
+  </div>
 </body>
 
 </html>
